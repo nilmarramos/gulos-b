@@ -13,7 +13,7 @@ const orderService = require('./routes/orderService')
 const dashboard = require('./routes/dashboard')
 
 const port = process.env.PORT || 3001
-const mongodb = process.env.MONGO || 'mongodb://192.168.99.100:32768/gulo'
+const mongodb = process.env.MONGOLAB_URI || 'mongodb://192.168.99.100:32768/gulo'
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
