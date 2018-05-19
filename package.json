@@ -1,0 +1,22 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Nilmar Ramos <nilmar-ramos22@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^2.0.0",
+    "cloudinary": "^1.11.0",
+    "connect-multiparty": "^2.1.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.13",
+    "nodemon": "^1.17.3",
+    "slugify-mongoose": "^1.0.2"
+  }
+}
