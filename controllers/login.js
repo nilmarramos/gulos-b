@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const { jwtSecret, email, pass } = require('../.env')
+const { jwtSecret, email, pass } = require('../env')
 const User = require('../models/user')
 
 const signIn = async(req, res) => {
