@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node app.js"
+    "preinstall": "npm install pm2 -g",
+    "start": "pm2-runtime app.js -i max"
   },
   "author": "Nilmar Ramos <nilmar-ramos22@hotmail.com>",
   "license": "ISC",
@@ -16,7 +17,6 @@
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.1",
     "mongoose": "^5.0.13",
-    "nodemon": "^1.17.3",
     "slugify-mongoose": "^1.0.2"
   }
 }
