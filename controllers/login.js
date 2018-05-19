@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const { jwtSecret } = require('../.env')
+const { jwtSecret, email, pass } = require('../.env')
 const User = require('../models/user')
 
 const signIn = async(req, res) => {
@@ -49,8 +49,8 @@ const createInitialUser = async() => {
 	const total = await User .count({email: 'guloseymas@email.com'})
 	if (total === 0) {
 		const user = new User({
-			email: 'guloseymas@email.com',
-			password: 'nilmar220782'
+			email: email,
+			password: pass
 		})
 		await user.save()
 	}
